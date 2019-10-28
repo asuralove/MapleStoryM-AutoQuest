@@ -12,24 +12,11 @@ The defualt path is `"C:\\Program Files\\Nox\\bin"` in `MapleM_AutoQuest_Model.i
 
 ## Usage
 1. Download two models (h5) files from [release](https://github.com/ChiHangChen/MapleStoryM-AutoQuest/releases).
-2. Modify some variables : 
-`
-desired_window = "夜神模擬器"
+2. Modify some variables below `Run script` title in `MapleM_AutoQuest_Model.ipynb` file. 
 
-# The Nox install path
-path = "C:\\Program Files\\Nox\\bin"
-os.chdir(path)
-
-'''
-The simulator default port, if you using multiple simulator, you should change the port.
-You can check your port number use : os.popen('adb devices').read()
-'''
-print(os.popen('adb devices').read())
-connect = os.popen("adb connect 127.0.0.1:62001").read()
-print(connect)
-`
-
-
+`path = "C:\\Program Files\\Nox\\bin"`
+and 
+`connect = os.popen("adb connect 127.0.0.1:62001").read()`
 
 3. Run the whole script `MapleM_AutoQuest_Model.ipynb`, it will catch screenshot frame by frame as model input and press relative position in Android simulator.
 
