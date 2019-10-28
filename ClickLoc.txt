@@ -1,0 +1,9 @@
+In dialog :
+(515,682) # First button of multiple quest
+(1377,521) # Complete button
+
+reward :
+(795,795) # Claim reward button
+
+goQuest :
+(134,294) # when now is idle

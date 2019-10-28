@@ -3,17 +3,15 @@
 # MapleStoryM-AutoQuest
 Using Convolution Neural Network to identify current situation and click relative button to execute quest automatically.
 
-Virtual keyboard of Android PC simulator must be set before using!
+Android PC simulator **Nox** install path must be defined!
 
-The essential setting of running quest automatically see the following.
+The defualt path is `"C:\\Program Files\\Nox\\bin"` in `MapleM_AutoQuest_Model.ipynb` file.
 
-<p align="center">
-  <img src="demo/kbd_setting.jpg" alt="Image" width="650" height="310" style="display: block; margin: 0 auto" />
-</p>
+Also, 
 
-`Auto Quest model.ipynb` is to train the image classification model using keras and tensorflow.
+`MapleM_AutoQuest_double_InvecptionResNetv2.ipynb` is to train the image classification model using keras and tensorflow.
 
-`Auto Quest Run.ipynb` is to catch screenshot frame by frame as model input and press relative virtual button in Android simulator.
+`MapleM_AutoQuest_Model.ipynb` is to catch screenshot frame by frame as model input and press relative position in Android simulator.
 
 # A quick demo :
 <kbd align="center">
